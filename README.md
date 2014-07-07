@@ -1,3 +1,4 @@
+![motion-egg-explain](./_art/motion-keychain.png)
 # motion-keychain
 
 TODO: Write a gem description
