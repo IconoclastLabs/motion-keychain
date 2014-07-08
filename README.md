@@ -20,7 +20,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Store secure data:
+```ruby
+  # Storing securely under key 'password'
+  MotionKeychain.set('password', @password.text)
+```
+
+Retrieve secure data:
+```ruby
+  # Retreiving 'password' content from keychain
+  @password.text = MotionKeychain.get('password')
+```
+
+Wipe secure data:
+```ruby
+  # User is logging out
+  MotionKeychain.remove('password')
+```
 
 ## Contributing
 
