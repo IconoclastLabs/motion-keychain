@@ -1,7 +1,8 @@
-![motion-egg-explain](./_art/motion-keychain.png)
-# motion-keychain
+![motion-keychain-explain](./_art/motion-keychain.png)
 
-TODO: Write a gem description
+#### Securely store data in RubyMotion.
+
+The motion-keychain gem is a simple wrapper for Keychain on iOS and OS X. Makes using Keychain APIs as easy as NSUserDefaults.
 
 ## Installation
 
