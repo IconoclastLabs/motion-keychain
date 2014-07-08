@@ -20,6 +20,7 @@ class MotionKeychain
     def remove(key)
       STORE.removeItemForKey(key.to_s)
       STORE.synchronize
+      true
     end
   end
 end
