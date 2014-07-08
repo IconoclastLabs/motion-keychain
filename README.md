@@ -1,4 +1,5 @@
 # motion-keychain
+[![Gem Version](https://badge.fury.io/rb/motion-keychain.svg)](http://badge.fury.io/rb/motion-keychain)
 
 #### Securely store data in RubyMotion.
 
@@ -41,7 +42,7 @@ Wipe secure data:
 
 ## TODO
 
-* Remove cocoapod dependency and move to pure RubyMotion implementation.
+* Remove cocoapod dependency and move to pure RubyMotion implementation. (v0.1.0)
 * Automatically add the correct app entitlements.
 
 ## Contributing
