@@ -6,10 +6,10 @@ Gem::Specification.new do |spec|
   spec.version       = VERSION
   spec.authors       = ["Gant"]
   spec.email         = ["GantMan@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = "Simple wrapper for Keychain on iOS and OS X."
+  spec.summary       = "The motion-keychain gem is a simple wrapper for Keychain on iOS and OS X. Makes using Keychain APIs as easy as NSUserDefaults."
   spec.homepage      = ""
-  spec.license       = ""
+  spec.license       = "MIT"
 
   files = []
   files << 'README.md'
@@ -20,4 +20,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "rake"
+  spec.add_dependency "motion-cocoapods", ">= 1.5.0"
 end
