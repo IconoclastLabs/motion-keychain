@@ -38,6 +38,17 @@ Wipe secure data:
   MotionKeychain.remove('password')
 ```
 
+#### Keychain access groups
+
+If you want the new keychain item to be shared among multiple applications, (i.e. include the kSecAttrAccessGroup key in the attributes dictionary), the value of your key must be the name of a keychain access group to which all of the programs that will share this item belong.
+
+This area needs more field-testing but for RubyMotion this means setting the entitlements in your Rakefile. E.G.
+```ruby
+  app.identifier = 'com.apple.myapp'
+  app.seed_id = '659823F3DC53'
+  app.entitlements['keychain-access-groups'] = [app.seed_id + '.' + app.identifier]
+```
+
 ## Contributing
 
 1. Fork it
