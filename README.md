@@ -1,4 +1,4 @@
-![motion-keychain-explain](./_art/motion-keychain.png)
+# motion-keychain
 
 #### Securely store data in RubyMotion.
 
