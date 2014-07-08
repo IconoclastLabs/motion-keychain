@@ -38,6 +38,12 @@ Wipe secure data:
   MotionKeychain.remove('password')
 ```
 
+
+## TODO
+
+* Remove cocoapod dependency and move to pure RubyMotion implementation.
+* Automatically add the correct app entitlements.
+
 ## Contributing
 
 1. Fork it
