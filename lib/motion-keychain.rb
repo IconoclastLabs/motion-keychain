@@ -8,6 +8,10 @@ lib_dir_path = File.dirname(File.expand_path(__FILE__))
 Motion::Project::App.setup do |app|
   app.files.unshift(Dir.glob(File.join(lib_dir_path, "project/**/*.rb")))
 
+  # Add needed security Framework
+  app.frameworks += ['Security']
+
+  # For now depending on pod
   app.pods do
     pod 'UICKeyChainStore'
   end

@@ -1,14 +1,14 @@
 # -*- encoding: utf-8 -*-
-VERSION = "1.0"
+VERSION = "0.0.1"
 
 Gem::Specification.new do |spec|
   spec.name          = "motion-keychain"
   spec.version       = VERSION
   spec.authors       = ["Gant"]
-  spec.email         = ["GantMan@gmail.com"]
+  spec.email         = ["Gant@iconoclastlabs.com"]
   spec.description   = "Simple wrapper for Keychain on iOS and OS X."
   spec.summary       = "The motion-keychain gem is a simple wrapper for Keychain on iOS and OS X. Makes using Keychain APIs as easy as NSUserDefaults."
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/IconoclastLabs/motion-keychain"
   spec.license       = "MIT"
 
   files = []
