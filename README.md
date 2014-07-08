@@ -1,4 +1,5 @@
 # motion-keychain
+[![Gem Version](https://badge.fury.io/rb/motion-keychain.svg)](http://badge.fury.io/rb/motion-keychain)
 
 #### Securely store data in RubyMotion.
 
@@ -48,6 +49,11 @@ This area needs more field-testing but for RubyMotion this means setting the ent
   app.seed_id = '659823F3DC53'
   app.entitlements['keychain-access-groups'] = [app.seed_id + '.' + app.identifier]
 ```
+
+
+## TODO
+
+* Remove cocoapod dependency and move to pure RubyMotion implementation. (v0.1.0)
 
 ## Contributing
 
