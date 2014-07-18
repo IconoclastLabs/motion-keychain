@@ -1,6 +1,6 @@
 # roughly a direct port of UICKeychainStore
 class RMKeychainStore
-  attr_accessor :default_service, :service, :items_to_update, :access_group
+  attr_accessor :defaultService, :service, :itemsToUpdate, :accessGroup
 
   def self.keyChainStoreWithService(service)
     self.alloc.initWithService(service)
@@ -11,24 +11,20 @@ class RMKeychainStore
   end
 
   def initialize()
-    @default_service ||= NSBundle.mainBundle.bundleIdentifier
-    @service = @default_service
-    self.initWithService(@default_service)
+    @defaultService ||= NSBundle.mainBundle.bundleIdentifier
+    @service = @defaultService
+    self.initWithService(@defaultService)
   end
 
-  def initWithService(service)
-    self.initWithService(service, nil)
-  end
-
-  def initWithService(service, access_group)
+  def initWithService(service, access_group = nil)
     #super
     if service.nil?
-      @service = @default_service
+      @service = @defaultService
     else
       @service = service
     end
-    @access_group
-    @items_to_update = {}
+    @accessGroup = access_group
+    @itemsToUpdate = {}
     self
   end
 
@@ -65,7 +61,7 @@ class RMKeychainStore
     self.dataForKey(key,service:self.defaultService,accessGroup:nil)
   end
 
-  def dataForKey(key, service: service,
+  def dataForKey(key, service: service)
     self.dataForKey(key,service:service,accessGroup:nil)
   end
 

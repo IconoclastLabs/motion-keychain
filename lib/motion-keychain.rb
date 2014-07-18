@@ -11,8 +11,4 @@ Motion::Project::App.setup do |app|
   # Add needed security Framework
   app.frameworks += ['Security']
 
-  # For now depending on pod
-  app.pods do
-    pod 'UICKeyChainStore'
-  end
 end

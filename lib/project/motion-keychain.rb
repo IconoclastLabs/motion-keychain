@@ -1,7 +1,6 @@
 class MotionKeychain
   class << self
-    SERVICE = NSBundle.mainBundle.bundleIdentifier
-    STORE = UICKeyChainStore.keyChainStoreWithService(SERVICE)
+    STORE = RMKeychainStore.new
 
     def store
       STORE
