@@ -29,7 +29,7 @@ Store secure data:
 
 Retrieve secure data:
 ```ruby
-  # Retreiving 'password' content from keychain
+  # Retrieving 'password' content from keychain
   @password.text = MotionKeychain.get('password')
 ```
 
